@@ -1,0 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/05 14:24:21 by bebektas          #+#    #+#             */
+/*   Updated: 2023/07/05 18:15:32 by bebektas         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+void	*ft_calloc(size_t count, size_t size)
+{
+	void	*ret;
+
+	ret = malloc(count * size);
+	if (ret)
+		ft_bzero(ret,count * size);
+	return (ret);
+}
