@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 21:12:53 by bbektas           #+#    #+#             */
-/*   Updated: 2023/07/04 13:41:06 by bebektas         ###   ########.fr       */
+/*   Updated: 2023/07/14 21:51:18 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
+

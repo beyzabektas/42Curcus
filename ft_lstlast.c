@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/06 21:31:06 by bbektas           #+#    #+#             */
-/*   Updated: 2023/07/10 13:05:32 by bbektas          ###   ########.fr       */
+/*   Created: 2023/07/12 18:11:05 by bbektas           #+#    #+#             */
+/*   Updated: 2023/07/13 14:26:01 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *str)
+t_list	*ft_lstlast(t_list *lst)
 {
-	char	*str2;
-	size_t	len;
-
-	len = ft_strlen(str);
-	str2 = (char *)malloc(len + 1);
-	if ((str2) == NULL)
-		return (NULL);
-	ft_memcpy(str2, str, len + 1);
-	return (str2);
+	if (!lst)
+		return (0);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }

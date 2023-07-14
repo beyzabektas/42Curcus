@@ -6,7 +6,7 @@
 /*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/24 14:03:58 by bbektas           #+#    #+#             */
-/*   Updated: 2023/07/05 13:47:31 by bebektas         ###   ########.fr       */
+/*   Updated: 2023/07/11 02:22:34 by bebektas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,17 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	i;
-	size_t	c;
-	size_t	n_len;
+	size_t	needle_len;
 
-	i = 0;
-	n_len = ft_strlen(needle);
-	if (haystack == NULL)
-		return (NULL);
-	if (n_len == 0 || haystack == needle)
+	if (*needle == '\0')
 		return ((char *)haystack);
-	while (((char *)(haystack))[i] != '\0' && i < len)
+	needle_len = ft_strlen(needle);
+	while (*haystack != '\0' && len-- >= needle_len)
 	{
-		c = 0;
-		while (((char *)(haystack))[i + c] != '\0' && needle[c] != '\0'
-			&& ((char *)(haystack))[i + c] == needle[c] && i + c < len)
-			c++;
-		if (c == n_len)
-			return ((char *)(haystack + i));
-		i++;
+		if (*haystack == *needle
+			&& ft_memcmp(haystack, needle, needle_len) == 0)
+			return ((char *)haystack);
+		haystack++;
 	}
-	return (0);
+	return (NULL);
 }

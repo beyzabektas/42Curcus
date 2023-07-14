@@ -6,7 +6,7 @@
 /*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 15:56:26 by bebektas          #+#    #+#             */
-/*   Updated: 2023/07/06 17:58:45 by bebektas         ###   ########.fr       */
+/*   Updated: 2023/07/10 22:11:12 by bebektas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,14 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	len;
-	char	*result;
+	size_t	i;
 
-	while (*s1 && ft_strchr(set, *s1) != 0)
+	if (!s1 || !set)
+		return (NULL);
+	while (*s1 && ft_strchr(set, *s1))
 		s1++;
-	len = ft_strlen(s1);
-	while (len && s1[len - 1] && ft_strchr(set, s1[len - 1]) != 0)
-		len--;
-	result = (char *)malloc(sizeof(char) * (len + 1));
-	if (!result)
-		return (0);
-	ft_memcpy(result, s1, len);
-	result[len] = '\0';
-	return (result);
-}
-int main()
-{
-	char str[] = "    Hello, world!   ";
-	char set[] = " ";
-	printf("%s",ft_strtrim(str,set));
+	i = ft_strlen(s1);
+	while (i && ft_strchr(set, s1[i]))
+		i--;
+	return (ft_substr(s1, 0, i + 1));
 }
