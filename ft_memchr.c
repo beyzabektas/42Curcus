@@ -6,7 +6,7 @@
 /*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/24 13:55:20 by bbektas           #+#    #+#             */
-/*   Updated: 2023/07/10 10:13:42 by bbektas          ###   ########.fr       */
+/*   Updated: 2023/07/21 13:31:54 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)(s + i));
 		i++;
 	}
-	return (NULL);
+	return (0);
 }

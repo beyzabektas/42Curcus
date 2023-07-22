@@ -6,7 +6,7 @@
 #    By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/10 10:59:39 by bbektas           #+#    #+#              #
-#    Updated: 2023/07/13 22:14:56 by bbektas          ###   ########.fr        #
+#    Updated: 2023/07/21 20:25:21 by bbektas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,4 +48,3 @@ fclean:	clean
 re:	fclean $(NAME)
 
 .PHONY: all clean fclean re
-.PHONY: all bonus clean fclean re git

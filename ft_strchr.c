@@ -6,7 +6,7 @@
 /*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/22 21:42:07 by bbektas           #+#    #+#             */
-/*   Updated: 2023/07/13 15:15:11 by bbektas          ###   ########.fr       */
+/*   Updated: 2023/07/21 12:50:59 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ char	*ft_strchr(const char *s, int c)
 		s++;
 		s_len--;
 	}
-	return (NULL);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 06:49:49 by bebektas          #+#    #+#             */
-/*   Updated: 2023/07/13 20:30:58 by bbektas          ###   ########.fr       */
+/*   Updated: 2023/07/21 17:52:31 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,3 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
-

@@ -5,27 +5,39 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/11 03:18:38 by bebektas          #+#    #+#             */
-/*   Updated: 2023/07/14 14:05:21 by bbektas          ###   ########.fr       */
+/*   Created: 2023/07/16 01:48:13 by bebektas          #+#    #+#             */
+/*   Updated: 2023/07/21 15:12:42 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
-static int	numwords(char const *s, char c)
+static int	wlen(char const *str, char c)
 {
-	int	cur;
-	int	word_num;
+	int	i;
 
-	cur = 0;
-	word_num = 0;
-	while (s[cur] != 0)
+	i = 0;
+	while (str[i] && str[i] != c)
+		i++;
+	return (i);
+}
+
+static int	count_words(char const *str, char c)
+{
+	int	count;
+
+	count = 0;
+	while (*str)
 	{
-		if (s[cur] != c && (s[cur + 1] == c || s[cur + 1] == 0))
-			word_num++;
-		cur++;
+		while (*str && *str == c)
+			str++;
+		if (*str)
+			count++;
+		while (*str && *str != c)
+			str++;
 	}
-	return (word_num);
+	return (count);
 }
 
 char	**free_all(char **result)
@@ -42,44 +54,29 @@ char	**free_all(char **result)
 	return (NULL);
 }
 
-static int	split_words(char **result, char const *s, char c, int word)
-{
-	int		start_cur;
-	int		end_cur;
-
-	end_cur = 0;
-	start_cur = 0;
-	while (s[end_cur])
-	{
-		if (s[end_cur] == c || s[end_cur] == 0)
-			start_cur = end_cur + 1;
-		if (s[end_cur] != c && (s[end_cur + 1] == c || s[end_cur + 1] == 0))
-		{
-			result[word] = malloc(sizeof(char) * (end_cur - start_cur + 2));
-			if (!result[word])
-			{
-				free_all(result);
-				return (0);
-			}
-			ft_strlcpy(result[word], (s + start_cur), end_cur - start_cur + 2);
-			word++;
-		}
-		end_cur++;
-	}
-	result[word] = 0;
-	return (1);
-}
-
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
+	int		word_index;
 
 	if (!s)
 		return (NULL);
-	result = malloc(sizeof(char *) * (numwords(s, c) + 1));
+	word_index = 0;
+	result = (char **) malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!result)
 		return (NULL);
-	if (!split_words(result, s, c, 0))
-		return (NULL);
+	while (*s)
+	{
+		while (*s && *s == c)
+			s++;
+		if (*s)
+		{
+			result[word_index] = ft_substr(s, 0, wlen(s, c));
+			if (!result[word_index++])
+				return (free_all(result));
+			s += wlen(s, c);
+		}
+	}
+	result[word_index] = NULL;
 	return (result);
 }

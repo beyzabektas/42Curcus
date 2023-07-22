@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 06:51:11 by bebektas          #+#    #+#             */
-/*   Updated: 2023/07/13 20:32:22 by bbektas          ###   ########.fr       */
+/*   Updated: 2023/07/16 01:47:39 by bebektas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb % 10, fd);
 	}
 }
-

@@ -6,11 +6,9 @@
 /*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 14:08:14 by bebektas          #+#    #+#             */
-/*   Updated: 2023/07/10 10:15:31 by bbektas          ###   ########.fr       */
+/*   Updated: 2023/07/21 13:43:44 by bbektas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_atoi(const char *str)
 {
