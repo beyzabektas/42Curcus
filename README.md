@@ -92,4 +92,24 @@ Bu tür yaklaşım, kodun güvenliğini ve istikrarını artırır, çünkü gir
 **`void *`** kullanmak, işlevin dönüş değerinin herhangi bir türe ait olabileceğini ve kullanıcının uygun bir dönüşüm yapabileceğini gösterir.
 
 
+### memcpy ve memmove farkı nedir?
+
+memcpy direk bir karakter dizisinden diğer diziye kopyalar fakat memmove’da ilk src’yi bir buffer’a kopyalar sonrasında bunu dest’e taşır.Overlapping için memmove daha güvenli.
+
+### while(—n) ve while(n—) farkı nedir?
+
+—n durumunda 0’a gelindiğinde artık döngüye girmez.Fakat n—’de 0 durumu da döngüye dahil edilir.
+
+### memchr ve strchr farkı nedir?
+
+- **`memchr`** işlevi, herhangi bir bellek bloğunda belirtilen değeri arar ve bellek alanının başlangıç adresini döndürebilir.
+- **`strchr`** işlevi, sadece karakter dizileri içinde belirtilen karakteri arar ve karakterin adresini döndürebilir.
+
+  ### strmapi ve striteri farkı nedir?
+
+**`strmap`** ve **`striter`** fonksiyonlarının kullanımına örnek olarak, bir karakter dizisindeki her bir karakteri büyük harfe dönüştürmek istediğinizi düşünelim. Eğer orijinal karakter dizisini korumak ve dönüştürülmüş bir kopyasını elde etmek isterseniz, **`strmap`** fonksiyonunu kullanabilirsiniz. Ancak, orijinal karakter dizisini değiştirmek ve aynı bellek bloğunda güncellemek isterseniz **`striter`** kullanılır.
+
+## FİLE DESCRİPTOR (dosya tanımlayıcı)
+
+**Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.** Çekirdek, kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir. Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.
 
