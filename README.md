@@ -12,29 +12,28 @@ Bu kitaplık için izin verilen yalnızca 3 standart kitaplık işlevi vardır:
 
 - <unistd.h>'den write(),
 - <stdlib.h>'den malloc() ve free(),
-- Size_t ve NULL'a erişmek için <string.h> kullanmamıza da izin verilir.
+- size_t ve NULL'a erişmek için <string.h> kullanmamıza da izin verilir.
 
-Lib C İşlevleri: standart C kitaplıklarından gelen işlevlerin orijinalleriyle çakışmasını önlemek için önlerinde “ft_” vardır.(fourty-two)
+Lib C İşlevleri: standart C kitaplıklarından gelen işlevlerin orijinalleriyle çakışmasını önlemek için önlerinde “ft_”(fourty-two) vardır.
 
 42’de , bir fonksiyonun ne yaptığını incelemek zorunda değiliz, onları yeniden kodlamak için saatlerce takılıp kaldığınızda, onları derinlemesine anlamak zorunda kalırsınız.
 
 # **<ctype.h>**
 
-Kütüphane kabaca C dilinde bulunan karakterler (char) üzerinde işlem yapmaya imkan sağlar. Kütüphane ismi de buradan gelmektedir 
+Kütüphane kabaca C dilinde bulunan karakterler (char) üzerinde işlem yapmaya imkan sağlar. Kütüphane ismi de buradan gelmektedir. -> **( char + type = ctype )**.
+Amacı bir karakterin tipini algılama veya değiştirmektir. C bağımsız değişkeni açıklanan koşulu sağlıyorsa tüm işlevler sıfırdan farklı (doğru) ve değilse sıfır (yanlış) döndürür.
 
-**( char + type = ctype)**.
+  
+| Fonksiyonla                |                          Açıklamaları                                              |    
+| :-------------------------:|:----------------------------------------------------------------------------------:| 
+| int isalpha(int c)         |Karakterin alfabede bulunan bir karakter olup olmadığını kontrol eder.              |       
+| int isdigit(int c)         |Karakterin bir rakam olup olmadığını kontrol eder.                                  |
+| int isalnum(int c)         |Karakterin alfabede bulunan bir değer veya bir rakam olup olmadığını kontrol eder.  |
+| int isascii(int c)         |Karakterin ascii karakteri olup olmadığını kontrol eder.                            |
+| int isprint(int c)         |Karakterin yazılabilir bir karakter olup olmadığını kontrol eder.                   |
+| int toupper(int c)         |Fonksiyona geçirilen c parametre değerinde yer alan küçük harfi büyük harfe çevirir.|
+| int tolower(int c)         |Fonksiyona geçirilen c parametre değerinde yer alan büyük harfi küçük harfe çevirir.|
 
-Amacı bir karakterin tipini algılama veya değiştirmektir. 
+### Neden parametrede char yerine int kullanılır ?
 
-C bağımsız değişkeni açıklanan koşulu sağlıyorsa tüm işlevler sıfırdan farklı (doğru) ve değilse sıfır (yanlış) döndürür.
-
-Fonksiyonlar & Açıklamaları
-
-
-
-| Fonksiyon                  |                          Açıklama                                                    |    
-| :-------------------------:|:------------------------------------------------------------------------------------:| 
-| int isalpha(int c)         |  Karakterin alfabede bulunan bir karakter olup olmadığını kontrol eder.              |       
-| int isdigit(int c)         |  Karakterin bir rakam olup olmadığını kontrol eder.                                  |
-| int isalnum(int c)         |  Karakterin alfabede bulunan bir değer veya bir rakam olup olmadığını kontrol eder.  |
-| int isascii(int c)         |  Karakterin ascii karakteri olup olmadığını kontrol eder.                            |
+Genişletilmiş Karakter Setleri: C dilinde, sadece temel karakterler değil, aynı zamanda genişletilmiş karakter setlerini de desteklemek önemlidir. Bu karakterlerin tam sayı değerleri ASCII kodları aralığının dışında olabilir. **`int`** türü, tüm karakterlerin temsil edilmesine izin verir.
