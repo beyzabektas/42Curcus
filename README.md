@@ -47,11 +47,11 @@ Ayrıca, bellek alanı tahsisi ve serbest bırakılması için kullanılan **`ma
 |char* strcpy(char *dest, const char *src)            |Src’yi dest karakter dizisine kopyalar.                                             |
 |char* strncpy(char *dest, const char *src, size_t n) |Src’nin n kadar byte değerini dest’e kopyalar.                                      |
 |char* strcat(char *dest, const char *src)            |Src’yi dest’in sonuna ekler.                                                        |
-|void* memcpy(void *dest, const void *src, size_t n)  |src dizisinin n değer kadar byte değerini dest’e kopyalar.                          |
+|void* memcpy(void *dest, const void *src, size_t n)  |Src dizisinin n değer kadar byte değerini dest’e kopyalar.                          |
 
 
 ## File Descriptor (dosya tanımlayıcı)   
-<div align="left">Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.** Çekirdek kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir.Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.<div align="right">
+<div align="left">Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.Çekirdek kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir.Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.<div align="right">
   
 ![file-descriptor-illustration](https://github.com/beyzabektas/42Cursus/assets/91256847/81f7dedc-09a3-46b9-8337-61f4551badd7)
 
