@@ -6,13 +6,13 @@
 </div>
 Bu projenin amacı, diğer tüm projelerimizde kullanmamıza izin verilecek olağan işlevleri yeniden gruplayan bir C kütüphanesi kodlamaktır.**
 
-42’de standart C kütüphane fonksiyonunu kullanmamıza izin verilmiyor, sadece kendi kodladığımız fonksiyonu kullanabiliyoruz. Yani bu kütüphanenin uzun vadeli hedefi, kendi fonksiyonumuzla büyümek.**
+42’de standart C kütüphane fonksiyonunu kullanmamıza izin verilmiyor, sadece kendi kodladığımız fonksiyonu kullanabiliyoruz. Yani bu kütüphanenin uzun vadeli hedefi, kendi fonksiyonumuzla büyümek.
 
-Bu kitaplık için izin verilen yalnızca 3 standart kitaplık işlevi vardır:**
+Bu kitaplık için izin verilen yalnızca 3 standart kitaplık işlevi vardır:
 
-- <unistd.h>'den write(),**
-- <stdlib.h>'den malloc() ve free().**
-- Size_t ve NULL'a erişmek için <string.h> kullanmamıza da izin verilir.**
+- <unistd.h>'den write(),
+- <stdlib.h>'den malloc() ve free(),
+- Size_t ve NULL'a erişmek için <string.h> kullanmamıza da izin verilir.
 
 Lib C İşlevleri: standart C kitaplıklarından gelen işlevlerin orijinalleriyle çakışmasını önlemek için önlerinde “ft_” vardır.(fourty-two)
 
