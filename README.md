@@ -14,7 +14,7 @@ Bu kitaplık için izin verilen yalnızca 3 standart kitaplık işlevi vardır:
 - <stdlib.h>'den malloc() ve free(),
 - size_t ve NULL'a erişmek için <string.h> kullanmamıza da izin verilir.
 
-Lib C İşlevleri: standart C kitaplıklarından gelen işlevlerin orijinalleriyle çakışmasını önlemek için önlerinde “ft_”(fourty-two) vardır.
+Lib C İşlevleri: standart C kitaplıklarından gelen işlevlerin orijinalleriyle çakışmasını önlemek için önlerinde “ft_” vardır.
 
 42’de , bir fonksiyonun ne yaptığını incelemek zorunda değiliz, onları yeniden kodlamak için saatlerce takılıp kaldığınızda, onları derinlemesine anlamak zorunda kalırsınız.
 
