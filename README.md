@@ -48,7 +48,11 @@ Ayrıca, bellek alanı tahsisi ve serbest bırakılması için kullanılan **`ma
 |char* strncpy(char *dest, const char *src, size_t n) |Src’nin n kadar byte değerini dest’e kopyalar.                                      |
 |char* strcat(char *dest, const char *src)            |Src’yi dest’in sonuna ekler.                                                        |
 |void* memcpy(void *dest, const void *src, size_t n)  |Src dizisinin n değer kadar byte değerini dest’e kopyalar.                          |
-
+|char* strchr(const char *str, int c)                 |c değerini str karakter dizisinin içinde ilk bulunduğu yeri arar.                   |
+|char* strrchr(const char *str, int c)                |c değerini str karakter dizisinin içinde son bulunduğu yeri arar.                   |
+|void* memset(void *dest, int c, size_t n)            |c değerini dest dizisini n kadar byte değeri dest’in üzerine kopyalar.              |
+|void* memmove(void *dest,const void *src, size_t n)  |Src’nin n kadar değerini dest’in adresine taşır.                                    |
+|void* memchr(const void *ptr, int c, size_t n)       |Ptr bölgesine n kadar ilk byte değerine c değerini atar.                            |
 
 ## File Descriptor (dosya tanımlayıcı)   
 <div align="left">Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.Çekirdek kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir.Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.<div align="right">
