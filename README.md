@@ -42,7 +42,7 @@ C programlama dilinde karakter dizileriyle ilgili işlemleri gerçekleştirmek i
 Ayrıca, bellek alanı tahsisi ve serbest bırakılması için kullanılan **`malloc`**, **`calloc`**, **`realloc`**, **`free`** gibi işlevleri de içerir.
 
 | Fonksiyonlar                                        |                          Açıklamaları                                              |    
-|:--------------------------------------------------: |:----------------------------------------------------------------------------------:| 
+|:---------------------------------------------------:|:----------------------------------------------------------------------------------:| 
 |size_t strlen(const char *str)                       |Karakter dizisinin uzunluğunu geri döndürür.                                        |
 |char* strcpy(char *dest, const char *src)            |Src’yi dest karakter dizisine kopyalar.                                             |
 |char* strncpy(char *dest, const char *src, size_t n) |Src’nin n kadar byte değerini dest’e kopyalar.                                      |
@@ -53,6 +53,28 @@ Ayrıca, bellek alanı tahsisi ve serbest bırakılması için kullanılan **`ma
 |void* memset(void *dest, int c, size_t n)            |c değerini dest dizisini n kadar byte değeri dest’in üzerine kopyalar.              |
 |void* memmove(void *dest,const void *src, size_t n)  |Src’nin n kadar değerini dest’in adresine taşır.                                    |
 |void* memchr(const void *ptr, int c, size_t n)       |Ptr bölgesine n kadar ilk byte değerine c değerini atar.                            |
+|void bzero(void *s, size_t n)                        |
+
+# **<stdlib.h>**
+
+| Fonksiyonlar                                        |                          Açıklamaları                                                |    
+|:---------------------------------------------------:|:------------------------------------------------------------------------------------:| 
+|int atoi(const char *str)                            |Str argümanıyla işaret edilen dizeyi bir tamsayıya dönüştürür.                        |
+|void* calloc(size_t count, size_t size)              |Malloc ile ayrılan yerde her elemanın tüm bitlerine 0 başlangıç ​​değerini verir        |
+|char	*ft_strdup(const char *str)                     |Malloc ile dizenin bir kopyası için depolama alanı ayırır.                            |
+
+
+| Ekstra Fonksiyonlar                                           |                          Açıklamaları                                      |
+|:-------------------------------------------------------------:|:--------------------------------------------------------------------------:| 
+|char* ft_substr(const char *s, unsigned int start, size_t len) |Başlangıcı ve uzunluğu alarak varolan diziden alt dizi oluşturmayı sağlar.  |
+|char	*ft_strjoin(char const *s1, char const *s2)               |İki dizeyi birleştirerek yeni bir dize oluşturmak için kullanılır.          |
+|char	*ft_strtrim(char const *s1, char const *set)              |Dizeden başlangıçta ve sondaki belirli karakteri kaldırmak için kullanılır. |
+|char **ft_split(char const *s, char c)                         |Bir dizeyi parçalara bölmek için kullanılır.                                |
+|char	*ft_itoa(int n)                                           |Tam sayı değerini (integer) karakter dizisine (string) dönüştürür.          |
+|char *ft_strmapi(char const *s, char (*f)(unsigned int, char)) |Dizinin tüm elemanlarına belirli bir fonksiyonu uygulayarak kopyaya aktarır.|
+|void	ft_striteri(char *s, void (*f)(unsigned int, char *))     |Bir dizinin tüm elemanlarına belirli bir fonksiyonu uygular.                |
+
+
 
 ## File Descriptor (dosya tanımlayıcı)   
 <div align="left">Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.Çekirdek kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir.Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.<div align="right">
