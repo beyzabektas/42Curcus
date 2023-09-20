@@ -41,20 +41,22 @@ C programlama dilinde karakter dizileriyle ilgili işlemleri gerçekleştirmek i
 **`string.h`** başlık dosyası, karakter dizilerinin kopyalanması, birleştirilmesi, karşılaştırılması, arama işlemleri gibi yaygın işlemleri gerçekleştirmek için kullanılan işlevleri sağlar. 
 Ayrıca, bellek alanı tahsisi ve serbest bırakılması için kullanılan **`malloc`**, **`calloc`**, **`realloc`**, **`free`** gibi işlevleri de içerir.
 
-| Fonksiyonlar                                            |                          Açıklamaları                                              |    
-|:-------------------------------------------------------:|:----------------------------------------------------------------------------------:| 
-|size_t strlen(const char *str)                           |Karakter dizisinin uzunluğunu geri döndürür.                                        |
-|char* strcpy(char *dest, const char *src)                |Src’yi dest karakter dizisine kopyalar.                                             |
-|char* strncpy(char *dest, const char *src, size_t n)     |Src’nin n kadar byte değerini dest’e kopyalar.                                      |
-|char* strcat(char *dest, const char *src)                |Src’yi dest’in sonuna ekler.                                                        |
-|char* strchr(const char *str, int c)                     |c değerini str karakter dizisinin içinde ilk bulunduğu yeri arar.                   |
-|char* strrchr(const char *str, int c)                    |c değerini str karakter dizisinin içinde son bulunduğu yeri arar.                   |
-|void* memset(void *dest, int c, size_t n)                |c değerini dest dizisini n kadar byte değeri dest’in üzerine kopyalar.              |
-|void* memmove(void *dest,const void *src, size_t n)      |Src’nin n kadar değerini dest’in adresine taşır.                                    |
-|void* memchr(const void *ptr, int c, size_t n)           |Ptr bölgesine n kadar ilk byte değerine c değerini atar.                            |
-|void* memcpy(void *dest, const void *src, size_t n)      |Src dizisinin n değer kadar byte değerini dest’e kopyalar.                          |
-|int	ft_memcmp(const void *s1, const void *s2, size_t n) |ptr2  ve ptr1 bellek değerinin n kadar byte değerini karşılaştırır.                 |
-|void bzero(void *s, size_t n)                            |s ile gösterilen alana n adet sıfır değerli baytı yerleştirir.                      |
+| Fonksiyonlar                                                |                          Açıklamaları                                              |    
+|:-----------------------------------------------------------:|:----------------------------------------------------------------------------------:| 
+|size_t strlen(const char *str)                               |Karakter dizisinin uzunluğunu geri döndürür.                                        |
+|char* strcpy(char *dest, const char *src)                    |Src’yi dest karakter dizisine kopyalar.                                             |
+|char* strncpy(char *dest, const char *src, size_t n)         |Src’nin n kadar byte değerini dest’e kopyalar.                                      |
+|size_t	ft_strlcpy(char *dst, const char *src, size_t size)   |Src'nin size kadar karakterini dest'e kopyalar ve ('\0') ile sonlandırır.           |
+|char* strcat(char *dest, const char *src)                    |Src’yi dest’in sonuna ekler.                                                        |
+|size_t	ft_strlcat(char	*dst, const char *src, size_t dstsize)|src dizesini dst hedef dizisinin sonuna ekler ve ('\0') ile sonlandırır.            |
+|char* strchr(const char *str, int c)                         |c değerini str karakter dizisinin içinde ilk bulunduğu yeri arar.                   |
+|char* strrchr(const char *str, int c)                        |c değerini str karakter dizisinin içinde son bulunduğu yeri arar.                   |
+|void* memset(void *dest, int c, size_t n)                    |c değerini dest dizisini n kadar byte değeri dest’in üzerine kopyalar.              |
+|void* memmove(void *dest,const void *src, size_t n)          |Src’nin n kadar değerini dest’in adresine taşır.                                    |
+|void* memchr(const void *ptr, int c, size_t n)               |Ptr bölgesine n kadar ilk byte değerine c değerini atar.                            |
+|void* memcpy(void *dest, const void *src, size_t n)          |Src dizisinin n değer kadar byte değerini dest’e kopyalar.                          |
+|int	ft_memcmp(const void *s1, const void *s2, size_t n)     |ptr2  ve ptr1 bellek değerinin n kadar byte değerini karşılaştırır.                 |
+|void bzero(void *s, size_t n)                                |s ile gösterilen alana n adet sıfır değerli baytı yerleştirir.                      |
 
 
 # **<stdlib.h>**
