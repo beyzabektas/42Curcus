@@ -1,7 +1,8 @@
 
 <div align="center">
 
-![libftm](https://github.com/beyzabektas/42Cursus/assets/91256847/89645507-12f5-416e-99c7-fce28e9e33b4)
+![libftm](https://github.com/beyzabektas/42Cursus/assets/91256847/b67af36f-9a64-40fe-94f2-c1a971ae5fd4)
+
 # "Libft - ilk kendi kütüphaneniz”
 </div>
 Bu projenin amacı, diğer tüm projelerimizde kullanmamıza izin verilecek olağan işlevleri yeniden gruplayan bir C kütüphanesi kodlamaktır.
