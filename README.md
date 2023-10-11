@@ -13,11 +13,12 @@ Bu projenin amacı , dosya tanımlayıcıdan okunan, yeni satırla sonlandırı
 ssize_t read(int fildes, void *buf, size_t nbyte);
 ```
 fd : open dosya tanımlayıcısı
+
 buf: Okunacak verilerin saklanacağı hafıza alanı
+
 nbytes: Okunacak bayt sayısı
 
 Fd'yi bayt kadar okuyun ve buf'ta saklayın.
-
 Buf içindeki veriyi saklamak istiyorsanız, bunu başka bir değişken veya bellek alanında saklamanız gerekir, çünkü her read çağrısı buf içindeki veriyi değiştirir.Bu stash dediğimiz alandan line'ı yazdırdığımızda o ifadeyi artık stash'ten temizlememiz gerekir çünkü stash geri döndürmediğimiz değerleri saklamak içindir.
 
 ## STACK VS HEAP
@@ -37,26 +38,34 @@ Stack ve Heap bellekte (RAM) bulunan mantıksal yapılardır.
 ![1_cUjtULh9DgatCLVydqZm4Q](https://github.com/beyzabektas/42Cursus/assets/91256847/bd2facb3-e930-49c0-9fc1-b9974568fad6)
 
 
-Stack Avantajları:
+### Stack Avantajları:
+
 ->Boşa harcanan alan yok.
+
 ->Stack belleği, bellek tahsis ve serbest bırakma işlemleri için genellikle daha hızlıdır, çünkü bu işlemler otomatik olarak yönetilir ve sadece işlev çağrıları sırasında stack belleği değiştirilir.
 
-Stack Dezavantajları:
-Esneklikten yoksundur.
-Stack belleği genellikle daha sınırlı bir depolama alanına sahiptir ve daha hızlı erişim sağlar, ancak bellek tahsisleri otomatik ve yerel değişkenler için sınırlı bir süre boyunca geçerlidir.
+### Stack Dezavantajları:
+
+->Esneklikten yoksundur.
+
+->Stack belleği genellikle daha sınırlı bir depolama alanına sahiptir ve daha hızlı erişim sağlar, ancak bellek tahsisleri otomatik ve yerel değişkenler için sınırlı bir süre boyunca geçerlidir.
 
 ## HEAP
 - Bellek kullanıcı tarafından dinamik olarak tahsis edilir ve serbest bırakılır (malloc() aracılığıyla ayırma ve free() aracılığıyla serbest bırakma işlemi yapılır).
 - Bellek rastgele sırada düşük adresten → yüksek adrese tahsis edilir.
 - Yığın FIFO'yu (İlk Giren, İlk Çıkar) kullanır, böylece ilk gelen veriler ilk önce alınır.Veriler yukarıdan aşağıya doğru birikir.
 - Bağlantılı listede yığın heap tahsisi tercih edilir.
-- 
-Heap Avantajları:
-Program için gerekli nesnelerin sayısı veya boyutu önceden bilinmediğinde kullanılabilir.
-Bir nesne yığın ayırıcıya sığmayacak kadar büyük olduğunda kullanılabilir.
 
-Heap Dezavantajları:
-Tahsis ve serbest bırakma işlemleri nedeniyle yavaşlama.
+  
+### Heap Avantajları:
+
+->Program için gerekli nesnelerin sayısı veya boyutu önceden bilinmediğinde kullanılabilir.
+
+->Bir nesne yığın ayırıcıya sığmayacak kadar büyük olduğunda kullanılabilir.
+
+### Heap Dezavantajları:
+
+->Tahsis ve serbest bırakma işlemleri nedeniyle yavaşlama.
 
 
 ## NASIL ???
