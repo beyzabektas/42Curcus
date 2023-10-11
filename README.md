@@ -87,7 +87,8 @@ Unix benzeri bir işletim sisteminde, varsayılan olarak ilk üç dosya tanıtı
 
 <div align="center">
   
-![file-descriptor-illustration](https://github.com/beyzabektas/42Cursus/assets/91256847/81f7dedc-09a3-46b9-8337-61f4551badd7)
+![file-descriptor-illustration](https://github.com/beyzabektas/42Cursus/assets/91256847/60d5f00a-40a8-496a-96f6-fe80a89febfb)
+
 
 </div>
 
@@ -102,7 +103,8 @@ Unix benzeri bir işletim sisteminde, varsayılan olarak ilk üç dosya tanıtı
 
 ## Linked List
 
-![Singlelinkedlist](https://github.com/beyzabektas/42Cursus/assets/91256847/ec5a7ce6-53a1-4ad1-91e7-9d656c8e1115)
+![Singlelinkedlist](https://github.com/beyzabektas/42Cursus/assets/91256847/0c3592f3-f62c-4c42-a042-e6fa310b906a)
+
 
 Bağlı listeler, her bir düğümün bir veri öğesi (content) ve bir sonraki düğümün adresini (next) içeren veri yapılardır. Bu yapı, verileri birbiriyle ilişkilendirerek dinamik olarak büyüyen ve daralan veri koleksiyonları oluşturmanıza olanak tanır.
 
