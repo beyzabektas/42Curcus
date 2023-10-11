@@ -35,9 +35,6 @@ Stack ve Heap bellekte (RAM) bulunan mantıksal yapılardır.
 - Ayrılacak belleğin boyutu derleyici tarafından bilinir ve bir işlev çağrıldığında değişkenleri yığında ayrılan belleği alır. Ve işlev çağrısı bittiğinde değişkenlere ilişkin belleğin tahsisi kaldırılır. Bunların hepsi derleyicideki önceden tanımlanmış bazı rutinler kullanılarak gerçekleşir.Bir programcının bellek tahsisi ve yığın değişkenlerinin tahsisinin kaldırılması konusunda endişelenmesine gerek yoktur. Bu tür hafıza tahsisi aynı zamanda Geçici hafıza tahsisi olarak da bilinir, çünkü yöntem yürütülmesini bitirir bitirmez o yönteme ait tüm veriler otomatik olarak yığından çıkarılır.
 - Stack de veriler üst üste (LIFO) - Last In, First Out mantığında dizilir ve sırası gelmeden aradaki bir değer ile işlem yapılamaz.Veriler aşağıdan yukarıya doğru birikir.
 
-![1_cUjtULh9DgatCLVydqZm4Q](https://github.com/beyzabektas/42Cursus/assets/91256847/bd2facb3-e930-49c0-9fc1-b9974568fad6)
-
-
 ### Stack Avantajları:
 
 ->Boşa harcanan alan yok.
@@ -49,6 +46,9 @@ Stack ve Heap bellekte (RAM) bulunan mantıksal yapılardır.
 ->Esneklikten yoksundur.
 
 ->Stack belleği genellikle daha sınırlı bir depolama alanına sahiptir ve daha hızlı erişim sağlar, ancak bellek tahsisleri otomatik ve yerel değişkenler için sınırlı bir süre boyunca geçerlidir.
+
+![1_cUjtULh9DgatCLVydqZm4Q](https://github.com/beyzabektas/42Cursus/assets/91256847/02198dd3-bc58-42b2-9a3a-ac10e4d484f7)
+
 
 ## HEAP
 - Bellek kullanıcı tarafından dinamik olarak tahsis edilir ve serbest bırakılır (malloc() aracılığıyla ayırma ve free() aracılığıyla serbest bırakma işlemi yapılır).
