@@ -5,7 +5,7 @@
 # "Printf - Çünkü putnbr ve putstr yeterli değil”
 </div>
 
-"printf" fonksiyonunun adındaki `"f", "formatlı" (formatted)` çıktı anlamına gelir."printf" fonksiyonu, C programlama dilinde kullanılan bir çıktı fonksiyonudur ve formatlı çıktı üretmek için kullanılır.
+"printf" fonksiyonunun adındaki `"f", "formatlı" (formatted)` çıktı anlamına gelir.
 
 Formatlı çıktı, özel `format belirteçleri (format specifier)` kullanılarak belirli tipte verilerin istenen biçimde ekrana yazdırılmasını sağlar. Bu format belirteçleri, **`%`** işaretiyle başlar ve belirli bir veri türünün nasıl gösterileceğini belirtir. 
 Örneğin, **`%d`** tamsayıları, **`%f`** kayan noktalı sayıları, **`%s`** karakter dizilerini, **`%c`** karakterleri ve diğer birçok veri türünü ekrana yazdırmak için kullanılır.
