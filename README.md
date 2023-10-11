@@ -3,7 +3,7 @@
 ![get_next_line](https://github.com/beyzabektas/42Cursus/assets/91256847/cfdf0b0b-2039-4bde-8b5a-9b83eb103ae0)
 
 
-# "Get_next_line - Bir fd'den bir satır okumak çok sıkıcı”
+# "Get_next_line - fd'den bir satır okumak çok sıkıcı”
 </div>
 
 Bu projenin amacı , dosya tanımlayıcıdan okunan, yeni satırla sonlandırılmış bir satırı döndüren bir işlevi kodlamaktır.
