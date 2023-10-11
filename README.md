@@ -81,11 +81,52 @@ Ayrıca, bellek alanı tahsisi ve serbest bırakılması için kullanılan **`ma
 
 
 ## File Descriptor (dosya tanımlayıcı)   
-<div align="left">Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.Çekirdek kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir.Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.<div align="right">
+Varolan bir dosyayı açtığımızda veya yeni bir dosya oluşturduğumuzda, çekirdek sürece bir dosya tanıtıcı döndürür.Çekirdek kullanımda olan tüm açık dosya tanıtıcılarının bir tablosunu tutar. Dosya tanımlayıcıların tahsisi genellikle sıralıdır ve bunlar, ücretsiz dosya tanımlayıcıları havuzundan bir sonraki ücretsiz dosya tanımlayıcısı olarak dosyaya tahsis edilir.Dosyayı kapattığımızda, dosya tanıtıcı serbest kalır ve daha fazla tahsis için kullanılabilir.
+
+Unix benzeri bir işletim sisteminde, varsayılan olarak ilk üç dosya tanıtıcısı STDIN ( standart giriş ), STDOUT (standart çıkış) ve STDERR'dir (standart hata).
+
+<div align="center">
   
 ![file-descriptor-illustration](https://github.com/beyzabektas/42Cursus/assets/91256847/81f7dedc-09a3-46b9-8337-61f4551badd7)
 
 </div>
 
 
+| Fonksiyonlar                                        |                          Açıklamaları                                                     |    
+|:---------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
+|void	ft_putchar_fd(char c, int fd)                   |Bir karakteri verilen dosya tanımlayıcısına (file descriptor) yazan basit bir fonksiyondur |
+|void	ft_putstr_fd(char *s, int fd)                   |Bir karakter dizisini belirtilen dosya tanımlayıcısına yazmayı amaçlar.                    |
+|void	ft_putendl_fd(char *s, int fd)                  |Bir karakter dizisini belirtilen dosya tanımlayıcısına yazdıktan sonra  ('\n') ekler.      |
+|void	ft_putnbr_fd(int n, int fd)                     |Bir tam sayıyı belirtilen dosya tanımlayıcısına  yazmayı amaçlar.                          |
 
+
+## Linked List
+
+![Singlelinkedlist](https://github.com/beyzabektas/42Cursus/assets/91256847/ec5a7ce6-53a1-4ad1-91e7-9d656c8e1115)
+
+Bağlı listeler, her bir düğümün bir veri öğesi (content) ve bir sonraki düğümün adresini (next) içeren veri yapılardır. Bu yapı, verileri birbiriyle ilişkilendirerek dinamik olarak büyüyen ve daralan veri koleksiyonları oluşturmanıza olanak tanır.
+
+Single Linked List = Gezinme yalnızca ileriye doğrudur.
+
+Doubly Linked List = İleri ve geri gezinme mümkündür.
+
+Circular Linked List = Son eleman ilk elemana bağlıdır.
+
+
+### LINKED LIST ve ARRAY Farkları?
+
+- Dizilerin boyutları sabittir, ancak bağlı liste dinamik boyuta sahiptir program akışı içerisinde değiştirilebilir.
+
+- Dizilerde elemanlar bellekte ardışıktır.Bağlı liste elemanları ise bellekte farklı konumlarda bulunabilir.
+
+- Dizilerde silme ve eleman kaldırılması zordur.Bağlı listelerde ise düğümlerin adres değerini değiştirerek kolayca yapılabilir.
+
+- Dizilerde aynı tipe ait veri saklanırken, bağlı listelerde farklı türlere ait veri saklanabilir.
+
+| Fonksiyonlar                                        |                          Açıklamaları                                                     |    
+|:---------------------------------------------------:|:-----------------------------------------------------------------------------------------:|
+|t_list	*ft_lstnew(void *content)                     |Content parametresi olarak alınan bir veri öğesini içeren yeni bir düğüm oluşturur.        |
+|void	ft_lstadd_front(t_list **lst, t_list *new)      |Bir bağlı listenin başına yeni bir düğüm eklemek için kullanılır.                          |
+|int	ft_lstsize(t_list *lst)                         |Bir bağlı listenin boyutu (düğüm sayısı) hesaplanır.                                       |
+|t_list	*ft_lstlast(t_list *lst)                      |Bir bağlı listenin son düğümünü yazdırır.                                                  |
+|void	ft_lstadd_back(t_list **lst, t_list *new)       |Düğümler bağlı listenin sonuna eklenir.                                                    |
