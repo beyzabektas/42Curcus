@@ -35,8 +35,9 @@ kill - terminate or signal a process
 Kill komutu iki parametreyi kabul eder: 
 bir sinyal adı (veya numarası) ve bir işlem kimliği.
 
-
+```
 kill -<signal> <PID>
+```
 
 Her duruma uygun sinyal, önceden bir makro değişken olarak tanımlanır, böylece uygun bir sinyal işleyici kullanılarak işlenebilir.
 
