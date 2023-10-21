@@ -37,15 +37,15 @@ Stack ve Heap bellekte (RAM) bulunan mantıksal yapılardır.
 
 ### Stack Avantajları:
 
-->Boşa harcanan alan yok.
+- Boşa harcanan alan yok.
 
-->Stack belleği, bellek tahsis ve serbest bırakma işlemleri için genellikle daha hızlıdır, çünkü bu işlemler otomatik olarak yönetilir ve sadece işlev çağrıları sırasında stack belleği değiştirilir.
+- Stack belleği, bellek tahsis ve serbest bırakma işlemleri için genellikle daha hızlıdır, çünkü bu işlemler otomatik olarak yönetilir ve sadece işlev çağrıları sırasında stack belleği değiştirilir.
 
 ### Stack Dezavantajları:
 
-->Esneklikten yoksundur.
+- Esneklikten yoksundur.
 
-->Stack belleği genellikle daha sınırlı bir depolama alanına sahiptir ve daha hızlı erişim sağlar, ancak bellek tahsisleri otomatik ve yerel değişkenler için sınırlı bir süre boyunca geçerlidir.
+- Stack belleği genellikle daha sınırlı bir depolama alanına sahiptir ve daha hızlı erişim sağlar, ancak bellek tahsisleri otomatik ve yerel değişkenler için sınırlı bir süre boyunca geçerlidir.
 
 ![1_cUjtULh9DgatCLVydqZm4Q](https://github.com/beyzabektas/42Cursus/assets/91256847/02198dd3-bc58-42b2-9a3a-ac10e4d484f7)
 
@@ -59,13 +59,13 @@ Stack ve Heap bellekte (RAM) bulunan mantıksal yapılardır.
   
 ### Heap Avantajları:
 
-->Program için gerekli nesnelerin sayısı veya boyutu önceden bilinmediğinde kullanılabilir.
+- Program için gerekli nesnelerin sayısı veya boyutu önceden bilinmediğinde kullanılabilir.
 
-->Bir nesne yığın ayırıcıya sığmayacak kadar büyük olduğunda kullanılabilir.
+- Bir nesne yığın ayırıcıya sığmayacak kadar büyük olduğunda kullanılabilir.
 
 ### Heap Dezavantajları:
 
-->Tahsis ve serbest bırakma işlemleri nedeniyle yavaşlama.
+- Tahsis ve serbest bırakma işlemleri nedeniyle yavaşlama.
 
 
 ## NASIL ???
