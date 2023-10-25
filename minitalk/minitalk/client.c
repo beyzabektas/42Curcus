@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   client.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 15:37:24 by bbektas           #+#    #+#             */
-/*   Updated: 2023/10/03 13:54:57 by bbektas          ###   ########.fr       */
+/*   Created: 2023/10/07 11:31:23 by bebektas          #+#    #+#             */
+/*   Updated: 2023/10/07 20:25:10 by bebektas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,32 @@
 
 void	send_signal(int pid, char c)
 {
-	int	slide;
-	int	error;
+	int	bit;
 
-	slide = 7;
-	error = 0;
-	while (slide >= 0)
+	bit = 7;
+	while (bit >= 0)
 	{
-		if ((c >> slide & 1) == 0)
-			error = kill(pid, SIGUSR1);
+		if (c >> bit & 1)
+			kill(pid, SIGUSR1);
 		else
-			error = kill(pid, SIGUSR2);
-		slide--;
-		usleep(200);
-	}
-	if (error == -1)
-	{
-		ft_putstr("Invalid PID !\n");
-		exit(1);
+			kill(pid, SIGUSR2);
+		usleep(100);
+		bit--;
 	}
 }
 
-int	main(int ac, char **av)
+int	main(int argc, char **argv)
 {
 	int	pid;
-	int	i;
 
-	if (ac == 3)
+	if (argc != 3)
 	{
-		pid = ft_atoi(av[1]);
-		i = -1;
-		while (av[2][++i])
-			send_signal(pid, av[2][i]);
+		write(1, "Check the arguments!", 20);
+		return (1);
 	}
-	else
-		ft_putstr("Invalid arguments !\n");
+	pid = ft_atoi(argv[1]);
+	while (*argv[2])
+		send_signal(pid, *(argv[2]++));
+	send_signal(pid, '\n');
 	return (0);
 }

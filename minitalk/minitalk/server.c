@@ -3,41 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   server.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bbektas <bbektas@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bebektas <bebektas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/03 03:42:34 by bbosnak           #+#    #+#             */
-/*   Updated: 2023/10/03 13:56:52 by bbektas          ###   ########.fr       */
+/*   Created: 2023/10/07 11:32:01 by bebektas          #+#    #+#             */
+/*   Updated: 2023/10/07 19:37:54 by bebektas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void	sig_handler(int sig)
+void	handle_signal(int signal)
 {
-	static char	byte = 0;
-	static int	slide = 7;
+	static int	bit = 128;
+	static int	c = 0;
 
-	if (sig == SIGUSR2)
-		byte += 1 << slide;
-	if (slide == 0)
+	if (signal == SIGUSR1)
+		c += bit;
+	bit /= 2;
+	if (bit == 0)
 	{
-		ft_putchar(byte);
-		byte = 0;
-		slide = 8;
+		write(1, &c, 1);
+		bit = 128;
+		c = 0;
 	}
-	slide--;
 }
 
 int	main(void)
 {
-	int	pid;
-
-	pid = getpid();
-	ft_putnbr(pid);
-	ft_putchar('\n');
-	signal(SIGUSR1, sig_handler);
-	signal(SIGUSR2, sig_handler);
+	write(1, "PID:", 4);
+	ft_putnbr(getpid());
+	write(1, "\n", 1);
+	signal(SIGUSR1, handle_signal);
+	signal(SIGUSR2, handle_signal);
 	while (1)
 		pause();
-	return (0);
 }
