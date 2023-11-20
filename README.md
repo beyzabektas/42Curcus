@@ -11,6 +11,7 @@ kullanarak bir yığındaki verileri sıralatacak. Başarabilmek için çeşitli
 algoritmaları manipüle edip optimal bir veri sıralaması için en uygun olanını(birçoğu
 arasından) seçmeniz gerekecek.
 
+# SIRALAMA ALGORİTMALARI
 ## 1. Bubble Sort
 Kabarcık sıralaması, yan yana duran iki elemanı karşılaştırarak, gerektiğinde yer değiştiren bir sıralama algoritmasıdır. Bu işlem, dizinin sonuna kadar devam edene kadar tekrarlanır. Her geçişte en büyük eleman dizinin sonunda yer alır.
 
