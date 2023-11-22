@@ -9,8 +9,11 @@ Bu projenin amacı, UNIX sinyallerini kullanarak küçük bir veri değişim pro
 kodlamaktır.
 
 SIGUSR1 ve SIGUSR2 kullanıcı sinyalleri kullanıldı.Bu sinyaller programcılar için ayrılmıştır ve asla işletim sistemi tarafından kullanılmaz. Projede SIGUSR1 sinyalini 0 gönderen, SIGUSR2 sinyalini de 1 gönderen olarak seçtik.
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/RNZIqvlB7cAyCdh9Gu/giphy.gif" width="200"/>
+</div>
 
-# Signal=Software Interrupt 
+# Signal (Software Interrupt)
 
 Sinyaller, çalışan bir işlemi başka bir eylemi gerçekleştirmek üzere kesintiye uğratmak için kullanılan yazılım kesintileridir. Bu kesintilere genellikle veri yolu hataları veya segfault'lar gibi çeşitli durumlarda ve ctrl+c komutuyla bir program sonlandırılmaya çalışıldığında karşılaşılır.
 SIGINT, SIGABRT, SIGQUIT, SIGUSR1 ve SIGUSR2 dahil olmak üzere farklı sinyal türleri vardır.
@@ -41,10 +44,4 @@ kill -signal PID
 
 Her duruma uygun sinyal, önceden bir makro değişken olarak tanımlanır, böylece uygun bir sinyal işleyici kullanılarak işlenebilir.
 
-Sinyal gönderme işlemi, hedef işlem asenkron bir şekilde çalışırken gerçekleşir. Yani, gönderilen sinyal işlemi derhal etkilemez; işlem, o an çalışmakta olduğu işi tamamlar ve ardından sinyal işlenir
-
-
-
-<div id="header" align="center">
-  <img src="https://media.giphy.com/media/RNZIqvlB7cAyCdh9Gu/giphy.gif" width="200"/>
-</div>
+Sinyal gönderme işlemi, hedef işlem asenkron bir şekilde çalışırken gerçekleşir. Yani, gönderilen sinyal işlemi derhal etkilemez; işlem, o an çalışmakta olduğu işi tamamlar ve ardından sinyal işlenirç
