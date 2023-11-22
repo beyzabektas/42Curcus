@@ -32,8 +32,8 @@ PID , işletim sistemindeki bir işlemi benzersiz şekilde tanımlayan işarets
 
 ## kill( )
 kill - terminate or signal a process
-Kill komutu iki parametreyi kabul eder: 
-bir sinyal adı (veya numarası) ve bir işlem kimliği.
+
+Kill komutu iki parametreyi kabul eder: sinyal adı (veya numarası) ve işlem kimliği.
 
 ```
 kill -signal PID
