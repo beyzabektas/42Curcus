@@ -3,7 +3,7 @@
 ![push_swape](https://github.com/beyzabektas/42Cursus/assets/91256847/52e8794a-a4c0-44bd-b890-8ab1f5163903)
 
 
-# "Çünkü Swap_push o kadar doğal değil”
+# "Push Swap - Because swap_push isn't as natural. ”
 </div>
 
 Bu proje size mümkün olan en düşük sayıda hamleyi yaparak ve sınırlı bir talimat seti
