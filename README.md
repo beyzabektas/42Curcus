@@ -2,7 +2,7 @@
 
 ![minitalkm](https://github.com/beyzabektas/42Cursus/assets/91256847/ea3bbbf3-89dd-40c7-8d16-a14a2cb93eca)
 
-# "Minitalk - Sinyal Gönderme ve Alma”
+# "Minitalk - Sending and Receiving Signals”
 </div>
 
 Bu projenin amacı, UNIX sinyallerini kullanarak küçük bir veri değişim programını
