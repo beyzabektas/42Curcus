@@ -7,6 +7,7 @@
 
 Bu proje çok küçük bir 2D oyundur.
 Amacı textures, sprites ve diğer bazı çok temel gameplay elementleri ile çalışmanızı sağlamaktır.
+Yeterli günüm kalmadığı için basit bir şeyler çıkarmaya çalıştım :(
 
 <div align="center">
 <img src="https://github.com/beyzabektas/42Cursus/assets/91256847/31e3c1aa-8326-41bb-831b-4f51288d2d27" alt="spacewar" width="400" height="200" />
@@ -22,4 +23,6 @@ Ancak, yunusların iletişim çabaları, insanlar tarafından futbol topuyla gö
 
 Yunusların son mesajı, geriye doğru üç takla atarak ringin içinden uçtukları inanılmaz derecede ayrıntılı bir gösteri olarak yorumlandı. Ancak, asıl mesaj şuydu: 
 
-#### "So long and thanks for all the fish ! - Elveda, Ve Tüm Balıklar İçin Teşekkürler."
+#### -So long and thanks for all the fish ! 
+##### (Elveda, Ve Tüm Balıklar İçin Teşekkürler)
+
