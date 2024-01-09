@@ -6,7 +6,7 @@
 </div>
 
 Bu proje çok küçük bir 2D oyundur.
-Amacı textures, sprites ve diğer bazı çok temel gameplay elementleri ile çalışmanızı sağlamaktır.
+Amacı textures, sprites ve diğer bazı temel gameplay elementleri ile çalışmanızı sağlamaktır.
 Yeterli günüm kalmadığı için basit bir şeyler çıkarmaya çalıştım :(
 
 <div align="center">
