@@ -2,7 +2,7 @@
 
 ![ft_printfe](https://github.com/beyzabektas/42Cursus/assets/91256847/dd58a85d-494b-4eae-a051-f02e1696b760)
 
-# "Printf - Çünkü putnbr ve putstr yeterli değil”
+# "Printf - Because ft_putnbr() and ft_putstr() aren’t enough.”
 </div>
 
 "printf" fonksiyonunun adındaki `"f", "formatlı" (formatted)` çıktı anlamına gelir.
