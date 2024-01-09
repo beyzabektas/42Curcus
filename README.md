@@ -16,9 +16,9 @@ fd : open dosya tanımlayıcısı
 
 buf: Okunacak verilerin saklanacağı hafıza alanı
 
-nbytes: Okunacak bayt sayısı
+nbytes: Okunacak byte sayısı
 
-Fd'yi bayt kadar okuyun ve buf'ta saklayın.
+Fd'yi byte kadar okuyun ve buf'ta saklayın.
 Buf içindeki veriyi saklamak istiyorsanız, bunu başka bir değişken veya bellek alanında saklamanız gerekir, çünkü her read çağrısı buf içindeki veriyi değiştirir.Bu stash dediğimiz alandan line'ı yazdırdığımızda o ifadeyi artık stash'ten temizlememiz gerekir çünkü stash geri döndürmediğimiz değerleri saklamak içindir.
 
 ## STACK VS HEAP
