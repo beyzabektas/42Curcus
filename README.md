@@ -27,5 +27,5 @@ Yunusların son mesajı, geriye doğru üç takla atarak ringin içinden uçtukl
 ##### (Elveda, Ve Tüm Balıklar İçin Teşekkürler)
 
 <div align="center">
-<img src="https://github.com/beyzabektas/42Cursus/assets/91256847/83609376-87a1-4119-ad7e-37b368739a99" alt="spacewar" width="600" height="300" />
+<img src="https://github.com/beyzabektas/42Cursus/assets/91256847/83609376-87a1-4119-ad7e-37b368739a99" alt="spacewar" width="500" height="300" />
 </div>
