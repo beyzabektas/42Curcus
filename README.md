@@ -26,6 +26,9 @@ Yunusların son mesajı, geriye doğru üç takla atarak ringin içinden uçtukl
 #### -So long and thanks for all the fish ! 
 ##### (Elveda, Ve Tüm Balıklar İçin Teşekkürler)
 
+Bu benim 42'deki son projem 
+So long 42 and thanks for the journey
+
 <div align="center">
 <img src="https://github.com/beyzabektas/42Cursus/assets/91256847/83609376-87a1-4119-ad7e-37b368739a99" alt="spacewar" width="500" height="300" />
 </div>
