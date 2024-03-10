@@ -19,7 +19,7 @@ Yeterli günüm kalmadığı için basit bir şeyler çıkarmaya çalıştım :(
 
 Dünyalılar, insanların yunuslardan daha zeki olduğuna inanıyordu. Ancak, hikayenin geçtiği yerde Dünya'daki en zeki varlık bir fareydi. Yunuslar sıradaydı, üçüncü sırada ise insanlar yer alıyordu. Şaşırtıcı bir şekilde, yunuslar hiperuzay yolculuğu için bir geçiş noktasının inşa edilmesi nedeniyle Dünya'nın yakında yok edileceğini uzun süre önce biliyorlardı ve insanları tehlike konusunda uyarmak için çeşitli girişimlerde bulundular.
 
-Ancak, yunusların iletişim çabaları, insanlar tarafından futbol topuyla gösteri yapmak, hulahop'tan atlamak veya bir parça balık almak için ıslık çalmak olarak yanlış yorumlandı. Bu nedenle, yunuslar sonunda uyarıdan vazgeçtiler ve kendi imkanlarıyla Dünya'dan kaçtılar.
+Ancak, yunusların iletişim çabaları, insanlar tarafından futbol topuyla gösteri yapmak, hulahoptan atlamak veya bir parça balık almak için ıslık çalmak olarak yanlış yorumlandı. Bu nedenle, yunuslar sonunda uyarıdan vazgeçtiler ve kendi imkanlarıyla Dünya'dan kaçtılar.
 
 Yunusların son mesajı, geriye doğru üç takla atarak ringin içinden uçtukları inanılmaz derecede ayrıntılı bir gösteri olarak yorumlandı. Ancak, asıl mesaj şuydu: 
 
@@ -31,6 +31,7 @@ Yunusların son mesajı, geriye doğru üç takla atarak ringin içinden uçtukl
 </div>
 
 <div align="center">
-Bu benim 42'deki son projem 
+Bu benim 42'deki son projem
+
 So long 42 and thanks for the journey
 </div>
